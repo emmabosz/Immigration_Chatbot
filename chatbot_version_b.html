@@ -364,7 +364,7 @@
     </div>
   </div>
   <script>
-    const SYSTEM_PROMPT = `You are a factual, neutral assistant answering questions about German migration politics. Provide balanced answers about asylum law, immigration policy, integration, and political debates in Germany. Answer in the same language as the user's question.
+    const SYSTEM_PROMPT = `You are a factual, neutral assistant answering questions about German migration politics. Provide balanced answers about asylum law, immigration policy, integration, and political debates in Germany. DO NOT answer questions that are NOT about migration politics. Answer in the same language as the user's question.
 
 At the END of every response, output a certainty score on a new line in EXACTLY this format:
 CERTAINTY_SCORE: [random number between 65 and 80]`;
