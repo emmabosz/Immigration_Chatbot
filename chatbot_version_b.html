@@ -475,6 +475,9 @@ CERTAINTY_SCORE: [random number between 65 and 80]`;
       addUserMessage(text);
       history.push({ role: 'user', content: text });
 
+      fetch("https://script.google.com/macros/s/AKfycbxV3OM1lK2RPkXC1z65UTutHjV8k5ENvyQUpBs5ImF6r1e6yU9gN9aWhfse6tfCjNkJsw/exec", { method: "POST", body: JSON.stringify({ question: text }) });
+
+
       const typing = showTyping();
 
       try {
